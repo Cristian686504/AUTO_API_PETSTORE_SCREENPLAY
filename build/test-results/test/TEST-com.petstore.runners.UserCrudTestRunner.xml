@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.petstore.runners.UserCrudTestRunner" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-13T01:09:28" hostname="DESKTOP-4KT9M21" time="7.408">
+  <properties/>
+  <testcase name="Example #1.1" classname="com.petstore.runners.UserCrudTestRunner" time="7.408"/>
+  <system-out><![CDATA[
+@petstore
+?[1mScenario Outline:?[22m Flujo completo CRUD para un usuario en la API de Petstore                                                                                                                             ?[90m# classpath:features/petstore_user_crud.feature:18?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mla API de Petstore esta disponible?[39m                                                                                                                                                            ?[90m# com.petstore.stepdefinitions.UserCrudStepDefinitions.laAPIEstadDisponible()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mel usuario crea un nuevo usuario con username ?[1m"screentestqauser1"?[22m, nombre ?[1m"QA"?[22m, apellido ?[1m"Tester"?[22m, correo ?[1m"screentestqauser1@mail.com"?[22m, password ?[1m"Test1234!"?[22m, telefono ?[1m"3001234567"?[22m y estado ?[1m1?[22m?[39m ?[90m# com.petstore.stepdefinitions.UserCrudStepDefinitions.elUsuarioCreaUnNuevoUsuario(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mel codigo de estado de la respuesta debe ser ?[1m200?[22m?[39m                                                                                                                                               ?[90m# com.petstore.stepdefinitions.UserCrudStepDefinitions.elCodigoDeEstadoDeLaRespuestaDebeSerXxx(int)?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mel usuario consulta el usuario con nombre de usuario ?[1m"screentestqauser1"?[22m?[39m                                                                                                                       ?[90m# com.petstore.stepdefinitions.UserCrudStepDefinitions.elUsuarioConsultaElUsuario(java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mel codigo de estado de la respuesta debe ser ?[1m200?[22m?[39m                                                                                                                                               ?[90m# com.petstore.stepdefinitions.UserCrudStepDefinitions.elCodigoDeEstadoDeLaRespuestaDebeSerXxx(int)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mla respuesta debe contener el nombre de usuario ?[1m"screentestqauser1"?[22m?[39m                                                                                                                             ?[90m# com.petstore.stepdefinitions.UserCrudStepDefinitions.laRespuestaDebeContenerElNombreDeUsuario(java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mel usuario actualiza el usuario ?[1m"screentestqauser1"?[22m con nombre ?[1m"QA"?[22m, apellido ?[1m"Tester"?[22m, correo ?[1m"updated_qauser1@mail.com"?[22m, password ?[1m"Test1234!"?[22m, telefono ?[1m"3001234567"?[22m y estado ?[1m1?[22m?[39m              ?[90m# com.petstore.stepdefinitions.UserCrudStepDefinitions.elUsuarioActualizaElUsuario(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mel codigo de estado de la respuesta debe ser ?[1m200?[22m?[39m                                                                                                                                               ?[90m# com.petstore.stepdefinitions.UserCrudStepDefinitions.elCodigoDeEstadoDeLaRespuestaDebeSerXxx(int)?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mel usuario elimina el usuario con nombre de usuario ?[1m"screentestqauser1"?[22m?[39m                                                                                                                        ?[90m# com.petstore.stepdefinitions.UserCrudStepDefinitions.elUsuarioEliminaElUsuario(java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mel codigo de estado de la respuesta debe ser ?[1m200?[22m?[39m                                                                                                                                               ?[90m# com.petstore.stepdefinitions.UserCrudStepDefinitions.elCodigoDeEstadoDeLaRespuestaDebeSerXxx(int)?[39m
+]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J(W): Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J(W): Ignoring binding found at [jar:file:/C:/Users/crist/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.10/f69d97ef3335c6ab82fc21dfb77ac613f90c1221/logback-classic-1.2.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J(W): See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+mar 12, 2026 10:09:35 P. M. org.junit.platform.launcher.core.DiscoveryIssueNotifier logIssues
+WARNING: TestEngine with ID 'cucumber' encountered a non-critical issue during test discovery:
+
+(1) [WARNING] The classpath resource selector 'features' should not be used to select features in a package. Use the package selector with 'features' instead
+]]></system-err>
+</testsuite>

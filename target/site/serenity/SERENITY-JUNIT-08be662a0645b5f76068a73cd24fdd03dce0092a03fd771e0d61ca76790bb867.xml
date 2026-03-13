@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="CRUD completo de usuarios en la API de Petstore" skipped="0" tests="1" time="7.35" timestamp="2026-03-12 10:09:28"><testcase name="Flujo completo CRUD para un usuario en la API de Petstore"/></testsuite>
